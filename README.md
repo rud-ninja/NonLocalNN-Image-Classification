@@ -38,3 +38,7 @@ The Neural network comprises of multiple 2D Convolutional layers with 16, 32 and
 ![](https://github.com/rud-ninja/emotion_detection/blob/main/images/neutral_predictions.png)
 ![](https://github.com/rud-ninja/emotion_detection/blob/main/images/sad_predictions.png)
 ![](https://github.com/rud-ninja/emotion_detection/blob/main/images/surprised_predictions.png)
+
+
+### Conclusion
+The model does quite well with an accuracy of over 60% for the well represented classes in the dataset, such as happiness and neutral. Random over sampling does not seem to help misclassification of the less represented ones, such as disgust and fear, with the given neural network parameters. More complex CNN models can be built involving more number of layers which will consequently increase the computational and hardware requirements as well.
