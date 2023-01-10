@@ -1,8 +1,8 @@
 # Title: Detection of emotions from facial features using Image processing and Deep learning
 
 ### Objectives:
-Process training images into pixel data and label them.
-Create deep learning model to detect emotions.
+Processed training images into pixel data and label them.
+Created deep learning model to detect emotions.
 
 #### Language used:
 Python
