@@ -1,6 +1,6 @@
 # Enhancing Image Classification Through Non-Local Neural Networks
 
-### Introduction
+## Introduction
 In recent years, deep learning advancements have significantly improved computer vision, particularly in image classification. Despite the success of convolutional neural networks (CNNs), their limitations in capturing long-range dependencies and global context hinder their efficacy in discerning intricate patterns, especially in tasks like facial emotion detection. This project explores the application of CNNs along with non-local neural networks (built from scratch based on well-established frameworks) to address these challenges in image classification. Non-local neural networks, inspired by self-attention mechanisms, provide a unique solution by allowing pixels to interact globally across spatial dimensions. The study focuses on emotion detection using facial features, leveraging the Facial Expression Recognition (FER 2013) dataset. Motivated by the need for improved sensitivity in emotion recognition, this research aims to evaluate the effectiveness of non-local neural networks in enhancing image classification precision, emphasizing their potential in the domain of facial emotion recognition.
 
 Note: It is important to clarify that this work is designed to solely demonstrate the efficacy of non-local neural networks and does not seek to achieve state-of-the-art results.
@@ -8,7 +8,7 @@ Note: It is important to clarify that this work is designed to solely demonstrat
 </br>
 </br>
 
-### Framework and Tools
+## Framework and Tools
 -	Deep Learning Framework: PyTorch
 -	Environment: Jupyter Notebook
 -	Base CNN Architecture: ResNet18
@@ -16,7 +16,7 @@ Note: It is important to clarify that this work is designed to solely demonstrat
 </br>
 </br>
 
-### About the dataset
+## About the dataset
 The FER 2013 dataset is a fundamental resource in the field of emotion recognition from facial expressions. It consists of 35,887 grayscale images of resolution 48 x 48 pixels, each labelled with one of seven emotions: anger, disgust, fear, happiness, sadness, surprise, or a neutral state. The dataset provides a diverse set of annotated facial expressions, drawn from various sources such as movies, online databases, and natural settings. These annotations serve as a valuable ground truth for training and evaluating models. Overall, the FER 2013 dataset is widely used in research to develop and benchmark facial emotion recognition algorithms.
 
 
@@ -26,7 +26,7 @@ The FER 2013 dataset is a fundamental resource in the field of emotion recogniti
 </br>
 </br>
 
-### Methodology
+## Methodology
 The methodology employed in this study involves a comparative analysis of the performance on the Facial Expression Recognition (FER) dataset between a base Convolutional Neural Network (CNN) model and an augmented version incorporating non-local layers. The chosen base CNN architecture is ResNet18, a well-established model recognized for its effectiveness in image classification tasks. The selection of ResNet18 is influenced by the paper on non-local neural networks where ResNet50 was employed for video frame recognition at a higher resolution of 224 x 224. Given the smaller input features in our case (48 x 48), a shallower architecture, ResNet18, is deemed appropriate for this project. This decision ensures alignment with the task requirements and computational efficiency while maintaining a principled approach to model selection.
 
 
@@ -62,7 +62,7 @@ In the paper introducing NLNNs, the experimental findings suggest that a higher 
 </br>
 </br>
 
-### Data preprocessing
+## Data preprocessing
 The images, being grayscale and of low resolution, underwent a slight contrast adjustment and denoising operation using the OpenCV library. This was done to accentuate distinct features with a gradual gradient and eliminate any noisy patches.
 
 
@@ -75,7 +75,7 @@ An initial examination of the label distribution demonstrates a notable imbalanc
 </br>
 </br>
 
-### Results
+## Results
 Apart from the incorporation of the non-local layer, both models share identical hyperparameters. All sources of randomness, such as those pertaining to data augmentation and the initialization of weights and biases, have been seeded with the same value for both models. This uniformity in hyperparameters and random operations ensures a fair and comparable experimental setup.
 
 
@@ -110,8 +110,15 @@ Below is a summary of the results obtained from both models on the test data
 </br>
 </br>
 
-### Conclusion
+## Conclusion
 In conclusion, the study aimed to assess the performance enhancement resulting from the incorporation of non-local neural networks into a base Convolutional Neural Network (CNN) model. Choosing ResNet as the foundational architecture, known for its resilience against the vanishing gradient issue, ensured a more robust base performance compared to a vanilla sequential CNN. Both models, one utilizing the base ResNet architecture and the other integrated with a non-local layer, underwent training under identical conditions to establish a fair and direct comparison. Our findings reveal that the model augmented with the non-local layer outperformed the base ResNet model. This conclusion underscores the effectiveness of integrating non-local neural networks in refining the performance of the base CNN model, as evidenced by improvements in stability, lower chances of overfitting and overall superior performance.
 
 
-Find the code [here.]()
+Find the code [here.](https://github.com/rud-ninja/emotion_detection/blob/main/codes/fer2013_w_resnet_nlnn.ipynb)
+</br>
+</br>
+
+## References
+1. Xiaolong Wang, Ross Girshick, Abhinav Gupta, & Kaiming He. (2018). Non-local Neural Networks.
+2. Yousif Khaireddin, & Zhuofa Chen. (2021). Facial Emotion Recognition: State of the Art Performance on FER2013.
+3. Shervin Minaee, & Amirali Abdolrashidi. (2019). Deep-Emotion: Facial Expression Recognition Using Attentional Convolutional Network.
