@@ -114,7 +114,8 @@ Below is a summary of the results obtained from both models on the test data
 In conclusion, the study aimed to assess the performance enhancement resulting from the incorporation of non-local neural networks into a base Convolutional Neural Network (CNN) model. Choosing ResNet as the foundational architecture, known for its resilience against the vanishing gradient issue, ensured a more robust base performance compared to a vanilla sequential CNN. Both models, one utilizing the base ResNet architecture and the other integrated with a non-local layer, underwent training under identical conditions to establish a fair and direct comparison. Our findings reveal that the model augmented with the non-local layer outperformed the base ResNet model. This conclusion underscores the effectiveness of integrating non-local neural networks in refining the performance of the base CNN model, as evidenced by improvements in stability, lower chances of overfitting and overall superior performance.
 
 
-Find the code [here.](https://github.com/rud-ninja/emotion_detection/blob/main/codes/fer2013_w_resnet_nlnn.ipynb)
+Check the code [here](https://github.com/rud-ninja/emotion_detection/blob/main/codes/fer2013_w_resnet_nlnn.ipynb)
+Try the model on your own data with this [web application](http://ibanerjee.pythonanywhere.com/)
 </br>
 </br>
 
